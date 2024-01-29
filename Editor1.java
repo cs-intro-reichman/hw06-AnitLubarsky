@@ -17,7 +17,7 @@ public class Editor1 {
 		// Reads the input image and creates an empty output image
 		Color[][] imageIn = Runigram.read(fileName);	
 		Color[][] imageOut = null;	
-		// Applies the specified image processing function										
+		//Applies the specified image processing function										
 		if (action.equals("fh")) {
 			imageOut = Runigram.flippedHorizontally(imageIn);
 		} else if (action.equals("fv")) {
@@ -32,6 +32,7 @@ public class Editor1 {
 		Runigram.setCanvas(imageIn);
 		Runigram.display(imageIn);
 		StdDraw.pause(3000); 
+		System.out.printf("Anit print imageout \n");
 		Runigram.display(imageOut);							
 	}
 }
